@@ -7,13 +7,15 @@ const ProductScreen = (props) => {
     const product = productList.data.find((product) => product.id === props.match.params.id);
     const [price,setPrice] = useState(product.price);
 
+    const originalPrice = (p) => {
+        setPrice(price+p);
+    }
+    
     if(!product) {
         return <div>Product Not Found</div>
     }
 
-    function caughtChange(val){
-        setPrice(price+val);
-    }
+
     
   return <>
      <Container>
@@ -29,15 +31,16 @@ const ProductScreen = (props) => {
                             <h5 className="mb-5 fw-bold fs-4 text-soft-red">Toping</h5>
                         </Col>
                         <Row className='mb-5'>
-                            {toppingList.data.map((data) => <Topping  data={data} key={data.id}/> ) }
+                            {toppingList.data.map((data) => <Topping data={data} totalPrice={(p)=> originalPrice(p)} key={data.id}/> ) }
+
                         </Row>
                     </Row>
                     <Row>
                         <Col>
-                            <h5 className="fw-bold fs-4 text-soft-red">{product.price}</h5>
+                            <h5 className="fw-bold fs-4 text-soft-red">Total</h5>
                         </Col>
                         <Col className='text-end'>
-                            <h5 className="fw-bold fs-4 text-soft-red">{product.price}</h5>
+                            <h5 className="fw-bold fs-4 text-soft-red">{price}</h5>
                         </Col>
                     </Row>
                     <Row>
