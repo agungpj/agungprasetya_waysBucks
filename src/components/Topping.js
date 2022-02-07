@@ -2,20 +2,20 @@ import React, {useState} from 'react';
 import { Col, Image } from 'react-bootstrap';
 function Topping({ data, totalPrice }){
 
-const [selectedImg, setSelectedImg] = useState(data.image)
+const [selectedImg, setSelectedImg] = useState(false)
 const checklistToggle = () => {
     if(!selectedImg){
-        setSelectedImg(data);
+        setSelectedImg(true);
         totalPrice(3000)
     } else{
-        setSelectedImg(data.img)
+        setSelectedImg(false)
         totalPrice(-3000)
     }
 }
     return(
         <>
             <Col onClick={checklistToggle} md={3} className='text-center toping-cnt'>
-            {selectedImg === data ? <Image src="/img/done-status.svg" className='done-img'></Image> : ""}
+            {selectedImg === true ? <Image src="/img/done-status.svg" className='done-img'></Image> : ""}
                 <Image src={data.image}></Image>
                 <p className='text-center'>{data.name}</p>
             </Col>
