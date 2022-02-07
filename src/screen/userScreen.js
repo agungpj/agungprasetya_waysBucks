@@ -29,12 +29,12 @@ const userScreen = () => {
                     </Col>
                     <Col>
                         <div className="name-date lh-xs mt-2">
-                            <p className="fs-6 fw-bold text-red">Ice Coffe Palm Sugar</p>
-                            <p className="fs-8"> <span class="fw-bold text-red">Saturday</span> , 5 March 2020</p>
+                            <p className="fs-6 fw-bold text-red">Hinami Latte</p>
+                            <p className="fs-8"> <span class="fw-bold text-red">Friday</span> , 10 Feb 2020</p>
                         </div>
                         <div className="lh-xs">
-                            <p className='fs-8'>Toping: Bill Berry Boba, Bubble Tea Gelatin</p>
-                            <p className="fs-8">Price: 33.000</p>
+                            <p className='fs-8'>Toping: Manggo</p>
+                            <p className="fs-8">Price: 69.000</p>
                         </div>
                     </Col>
                 </Row>
@@ -52,7 +52,7 @@ const userScreen = () => {
                 </Row>
                 <Row>
                     <Col>
-                        <p className='fs-8 text-soft-blue bg-soft-blue py-2 fw-bold'>On The Ways</p>
+                        <p className='fs-8 text-red bg-white py-2 fw-bold'>On The Ways</p>
                     </Col>
                 </Row>
                 <Row>

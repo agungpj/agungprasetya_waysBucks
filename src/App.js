@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Homescreen from '../src/screen/Homescreen'
-import addProductScreen from '../src/screen/Homescreen'
+import addProductScreen from '../src/screen/addProductScreen'
 import ProductScreen from '../src/screen/ProductScreen'
 import cartScreen from '../src/screen/cartScreen'
 import userScreen from '../src/screen/userScreen'

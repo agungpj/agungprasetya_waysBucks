@@ -3,7 +3,7 @@ import {Form, Col, Row, Container, Image, Button} from 'react-bootstrap';
 
 const addProductScreen = () => {
   return <>
-     <Container>
+     <Container className="pb-5">
             <Row className='d-flex justify-content-between'>
                 <Col>
                     <h2 className='text-red fw-bold'>Product</h2>
